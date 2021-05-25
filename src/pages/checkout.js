@@ -4,7 +4,7 @@ import CheckOutProduct from "../components/CheckOutProduct";
 import Header from "../components/Header";
 import { selectItems, selectTotal } from "../slices/basketSlice";
 import Currency from "react-currency-formatter";
-import {useSession} from "next-auth/client"
+import {useSession} from 'next-auth/client'
 function Checkout() {
     const items=useSelector(selectItems);
     const total=useSelector(selectTotal);
