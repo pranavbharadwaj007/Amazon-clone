@@ -37,7 +37,7 @@ function Header() {
             <p className="hover:underline">{session ? `Hello, ${session.user.name}`:"Sign In"}</p>
             <p className='font-extrabold sm:text-sm'>Accout & List</p>
           </div>
-          <div className=" link">
+          <div onClick={()=>router.push('/orders')} className=" link">
             <p>Returns</p>
             <p className='font-extrabold sm:text-sm'>& Orders</p>
           </div>
